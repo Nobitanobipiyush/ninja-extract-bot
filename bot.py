@@ -3,7 +3,8 @@ import zipfile, rarfile, tarfile
 import shutil, os, time
 
 # 🔑 BOT TOKEN (BotFather se mila hua)
-TOKEN = "8526182224:AAGhSSt1wLc22601WynJdTQiIRP3WoRh6O8"
+import os
+TOKEN = os.getenv("8526182224:AAGhSSt1wLc22601WynJdTQiIRP3WoRh6O8")
 bot = telebot.TeleBot(TOKEN)
 
 # 🔒 FORCE JOIN CHANNEL
